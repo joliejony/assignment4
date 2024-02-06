@@ -28,9 +28,11 @@
             <input type="text" id="username" name="username" placeholder="Enter your username">
             <br>
             <style>
-               .hide-eye {
-            background-image: none !important;
-        } 
+               input[type="password"]::-ms-reveal,
+               input[type="password"]::-webkit-contacts-auto-fill-button,
+               input[type="password"]::-webkit-credentials-auto-fill-button {
+               display: none;
+    }
             </style>
             
             <label for="password">Password:</label>
