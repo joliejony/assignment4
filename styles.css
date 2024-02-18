@@ -1,0 +1,135 @@
+ 
+ /* Home page */
+ 
+ header {
+    font-size: 18px;
+    padding: 20px;
+    background-color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  header h1 {
+    margin: 0;
+    color: white;
+  }
+
+  header img {
+    width: 100px;
+ }
+
+  div{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%; 
+  }
+
+  div ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    width: 100%; 
+    justify-content: space-around;
+}
+
+
+div ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+  main{
+   padding: 20px;
+  }
+
+  
+  .about-us{
+    display: flex;
+    text-align:center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .about-us h3 {
+   
+    padding: 10px; 
+    margin-top: 0; 
+}
+.about-us p{
+    margin-top: 0;
+    text-align: left
+}
+
+.shop-now a {
+    padding: 10px;
+    width: 90px;
+    height: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;   
+}
+
+.customer-reviews  {
+    display: flex;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+  
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: #ddd;
+}
+
+.review h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    background-color: #ddd;
+}
+
+.review p {
+    margin: 0;
+    background-color: #ddd;
+}
+
+.checked {
+    color:yellow;
+  }
+
+.star-rating {
+    background-color: #ddd;
+    display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.fa-star {
+    margin-right: 1px; 
+  }
+    
+.star-rating .fa-star:nth-last-child(-n+2) {
+    color: yellow;
+}
+
+.footer{
+    background-color: #333;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
