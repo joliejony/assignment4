@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
@@ -22,20 +23,27 @@
     </div>
 
     <main>
-        <p>Welcome to our contact page! If you have any questions or inquiries, feel free to reach out to us.</p>
-        
-        <h2>Contact Information:</h2>
-        <p>Email (1): <a href="mailto:grazia.mena@ucalgary.ca">grazia.mena@ucalgary.ca</a></p>
-        <p>Email (2): <a href="mailto:jolie.moawad@ucalgary.ca">jolie.moawad@ucalgary.ca</a></p>
-        <p>Phone: +1 (403) 607-2860</p>
-        
-        <h2>Follow Us on Social Media:</h2>
-        <a href="https://facebook.com" target="_blank">Facebook.com</a><br>
-        <a href="https://instagram.com" target="_blank">Instagram.com</a>
+        <div class="contact">
+            <p>Welcome to our contact page! If you have any questions or inquiries, feel free to reach out to us.</p>
+            
+            <div class="contact-method"> 
+                <h2>Contact Information:</h2>
+                <p>Email (1): <a href="mailto:grazia.mena@ucalgary.ca" class="contact-link">grazia.mena@ucalgary.ca</a></p>
+                <p>Email (2): <a href="mailto:jolie.moawad@ucalgary.ca" class="contact-link">jolie.moawad@ucalgary.ca</a></p>
+                <p>Phone: +1 (403) 607-2860</p>
+            </div>
+            
+            <div class="contact-method"> 
+                <h2>Follow Us on Social Media:</h2>
+                <a href="https://facebook.com" target="_blank" class="contact-link">Facebook.com</a><br>
+                <a href="https://instagram.com" target="_blank" class="contact-link">Instagram.com</a>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        &copy; 2024 G&J Designs. Copyright Grazia Mena and Jolie Jony.
+    <footer class="footer"> 
+        <!-- Copyright notice goes here -->
+        &copy; 2024 G&J Designs. Copyright Jolie Jony and Grazia Mena.
     </footer>
 
 </body>
