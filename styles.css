@@ -297,8 +297,6 @@ img {
 
 
 /* CONTACT PAGE CSS*/
-
-
 .contact {
     display: flex;
     justify-content: flex-start;    /* Aligns horizontally using flexbox */
@@ -341,28 +339,43 @@ img {
     color: white;
 }
 
-/* login page*/
+/* Login Page CSS*/
 
 .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #ddd;
     padding:20px;
     margin:20px;
     border-radius:10px;
-    text-align: centxer;
+    text-align: center;
     }
 
-.login label{
-    display: block;
-    margin: 10px;
-}
+    .login input {
+        display: flex;
+        flex-direction: column;
+      }
 
+.login label {
+        display: block; /* Change display to block */
+        width: 100px; /* Set a fixed width for the labels */
+        text-align: right; /* Align label text to the right */
+        margin-bottom: 10px; /* Add margin to bottom for spacing */
+        padding-right: 20px; /* Add padding to create space between label text and input fields */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+            
 
-.login input {
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-  }
+    .login input[type="text"],
+    .login input[type="password"],
+    .login input[type="submit"] {
+      background-color: #fff;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+    }
   
 .login button{
     background-color: #4CAF50;
