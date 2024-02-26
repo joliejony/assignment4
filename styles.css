@@ -294,5 +294,42 @@ img {
             text-align: center;
             color: white;
         }
-        
-  
+
+
+/* CONTACT PAGE CSS*/
+
+.contact {
+    display: flex;
+    justify-content: flex-start;    /* Aligns horizontally using flexbox */
+    align-items: flex-start;        /* Aligns vertically using flexbox */
+    background-color: #ddd;         /* medium gray background */
+    padding: 20px;                   /* 20 px padding */
+    margin: 20px;                    /* 20 px margin */
+    border-radius: 10px;            /* rounds corners */
+}
+
+.contact-link:hover {
+    text-decoration: underline;    /* Adds underline when hovering */
+}
+
+.contact-link {
+    color: #007BFF;
+    margin: 0px;
+    text-decoration: none;
+    transition: text-decoration 0.3s;        /* Smooth transition effect */
+}
+
+.contact-method {
+    background-color: #ddd;         /* medium gray background */
+    padding: 0px;                    /* 0 px padding */
+    margin: 0px;                     /* 0 px margin */
+    border-radius: 10px;             /* rounds corner */
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
