@@ -189,9 +189,7 @@ img {
      background-color: #f9f9f9;
      transition: background-color 0.3s;
      
-     
-
-     }
+}
      
         
 .product img {
@@ -356,7 +354,7 @@ img {
     text-align: center;
     }
 
-    .login input {
+.login input {
         display: flex;
         flex-direction: column;
       }
@@ -366,6 +364,9 @@ img {
     margin: 10px;
 }
 
+.logo img {
+    margin-right: auto;
+}
 
 .login input {
     background-color: #fff;
