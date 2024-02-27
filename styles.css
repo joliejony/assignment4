@@ -341,23 +341,16 @@ img {
 }
 
 /* Login Page CSS*/
-
 .login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ddd;
-    padding:20px;
-    margin:20px;
-    border-radius:10px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
     }
-
-.login input {
-        display: flex;
-        flex-direction: column;
-      }
 
 .login label{
     display: block;
@@ -392,14 +385,13 @@ img {
   opacity: 1.0;
 }
 
-.signup-link {
+.login a{
     color: #007BFF;
     margin: 10px;
-    text-decoration: none; 
-    transition: text-decoration 0.3s; 
+    text-decoration: none;
 }
 
-.signup-link:hover {
+.login a:hover {
     text-decoration: underline; /* add underline on hover */
   }
 
