@@ -1,7 +1,6 @@
+/* Home page */
  
- /* Home page */
- 
- header {
+header {
     font-size: 18px;
     padding: 20px;
     background-color: #333;
@@ -295,13 +294,16 @@ img {
 
 .contact {
     display: flex;
-    justify-content: flex-start;    /* Aligns horizontally using flexbox */
-    align-items: flex-start;        /* Aligns vertically using flexbox */
+    justify-content: center;    /* Aligns horizontally using flexbox */
+    align-items: center;        /* Aligns vertically using flexbox */
     background-color: #ddd;         /* medium gray background */
     padding: 20px;                   /* 20 px padding */
     margin: 20px;                    /* 20 px margin */
     border-radius: 10px;            /* rounds corners */
     flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;             /* Center horizontally */
+    margin-top: 50px
 }
 
 
@@ -341,16 +343,23 @@ img {
 }
 
 /* Login Page CSS*/
+
 .login{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ddd;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ddd;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+    text-align: center;
     }
+
+.login input {
+        display: flex;
+        flex-direction: column;
+      }
 
 .login label{
     display: block;
@@ -385,13 +394,14 @@ img {
   opacity: 1.0;
 }
 
-.login a{
+.signup-link {
     color: #007BFF;
     margin: 10px;
-    text-decoration: none;
+    text-decoration: none; 
+    transition: text-decoration 0.3s; 
 }
 
-.login a:hover {
+.signup-link:hover {
     text-decoration: underline; /* add underline on hover */
   }
 
