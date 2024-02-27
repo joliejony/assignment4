@@ -136,10 +136,6 @@ div ul li a {
 }
 
 
-
-
-
-
 /* PRODUCTS PAGE CSS*/
 
 
@@ -298,12 +294,6 @@ img {
 
 /* CONTACT PAGE CSS*/
 
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 .contact {
     display: flex;
@@ -352,24 +342,31 @@ img {
     color: white;
 }
 
-/* login page*/
+/* Login Page CSS*/
 
 .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #ddd;
     padding:20px;
     margin:20px;
     border-radius:10px;
-    text-align: centxer;
+    text-align: center;
     }
+
+    .login input {
+        display: flex;
+        flex-direction: column;
+      }
 
 .login label{
     display: block;
     margin: 10px;
 }
 
-.logo img {
-    margin-right: auto;
-}
+
 .login input {
     background-color: #fff;
     padding: 10px;
