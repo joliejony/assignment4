@@ -41,7 +41,10 @@
 div ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 20px;  /* Adjusted padding: 10px on top and bottom, 20px on left and right */
 }
+
+
 
 
   main{
@@ -79,6 +82,7 @@ div ul li a {
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;   
+    margin: 20px
 }
 
 .customer-reviews  {
@@ -295,13 +299,16 @@ img {
 
 .contact {
     display: flex;
-    justify-content: flex-start;    /* Aligns horizontally using flexbox */
-    align-items: flex-start;        /* Aligns vertically using flexbox */
+    justify-content: center;    /* Aligns horizontally using flexbox */
+    align-items: center;        /* Aligns vertically using flexbox */
     background-color: #ddd;         /* medium gray background */
     padding: 20px;                   /* 20 px padding */
-    margin: 20px;                    /* 20 px margin */
+    margin: 20px auto;                    /* 20 px margin */
     border-radius: 10px;            /* rounds corners */
     flex-direction: column;
+    max-width: fit-content;
+    margin: 0 auto;             /* Center horizontally */
+    margin-top: 50px
 }
 
 
