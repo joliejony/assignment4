@@ -327,10 +327,10 @@ img {
 .contact-method ul li a {
     color: light blue; 
 }
-/* Social Media Links Hover Effect */
-.contact-method ul li a:hover {
-    color: #007BFF; 
-}
+
+.contact-method a:hover {
+    color: #007BFF;
+  }
 
 .footer {
     background-color: #333;
