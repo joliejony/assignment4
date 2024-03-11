@@ -294,24 +294,32 @@ img {
 
 
 /* CONTACT PAGE CSS*/
-
-/* Contact Information Section Styles */
-.contact-info {
-	background-color: #ddd;
+.contact {
     display: flex;
+    justify-content: center;    /* Aligns horizontally using flexbox */
+    align-items: center;        /* Aligns vertically using flexbox */
+    background-color: #ddd;         /* medium gray background */
+    padding: 20px;                   /* 20 px padding */
+    margin: 20px auto;                    /* 20 px margin */
+    border-radius: 10px;            /* rounds corners */
     flex-direction: column;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+    max-width: fit-content;
+    margin: 0 auto;             /* Center horizontally */
+    margin-top: 50px
 }
 
-/* Contact Method Styles */
 .contact-method {
-    background-color: #ddd;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 10px;
+    background-color: #ddd;         /* medium gray background */
+    padding: 0px;                    /* 0 px padding */
+    margin: 0px;                     /* 0 px margin */
+    border-radius: 10px;             /* rounds corner */
     flex-direction: column;
+}
+
+.contact img {
+
+    margin-right: auto;
+
 }
 
 /* Social Media Links Styles */
@@ -331,6 +339,7 @@ img {
     text-align: center;
     color: white;
 }
+
 /* Login Page CSS*/
 
 .login{
