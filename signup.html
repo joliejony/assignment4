@@ -4,50 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section -->
     <header>
+        <!-- Logo image -->
         <div class="logo">
             <img src="images/logo.jpg" alt="logo picture" width="500">
         </div>
+        <!-- Website name -->
         <h1>G&J Designs</h1>
     </header>
+    <!-- Navigation section -->
     <div>
         <ul>
+            <!-- Navigation links -->
             <li><a href="products.html">Our Products!</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
+    <!-- Main content section -->
     <main>
+        <!-- Signup form section -->
         <section class="signup-form">
+            <!-- Form title -->
             <h2>Signup Form</h2>
+            <!-- Signup form -->
             <form action="#" method="post">
+                <!-- Username field -->
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
                 </div>
+                <!-- Password field -->
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
+                <!-- Confirm Password field -->
                 <div class="form-group">
                     <label for="confirm-password">Confirm Password:</label>
                     <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
                 </div>
+                <!-- Email field -->
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
+                <!-- Signup button -->
                 <button type="button" class="signup-btn" onclick="validate()">Sign Up</button>           
              </form>
         </section>
     </main>
 
+    <!-- JavaScript code for form validation -->
     <script>
+        // Function to validate the signup form
         function validate() {
+            // Get form field values and patterns
             var username = document.getElementById("username").value;
             var usernamePattern = /^[a-zA-Z][a-zA-Z0-9-_]{2,19}$/;
     
@@ -58,62 +76,71 @@
             var email = document.getElementById("email").value;
             var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     
+            // Get message box container and message box elements
             var messageBoxContainer = document.getElementById("messageBoxContainer");
             var messageBox = document.getElementById("message-text");
     
+            // Hide message box and clear its content initially
             messageBoxContainer.style.display = "none";
             messageBox.textContent = "";
     
+            // Initialize counter and message variables
             var count = 0;
             var userMess = "";
             var passMess = "";
             var passConMess = "";
             var emailMess = "";
     
+            // Validate username
             if (!usernamePattern.test(username)) {
                 userMess = "Check the Username." + "<br>"+ "<br>";
                 count++;
             }
                 
+            // Validate password
             if (!passwordPattern.test(password)) {
                 passMess = "Invalid password." + "<br>"+ "<br>";
                 count++;
             }
                 
+            // Validate confirm password
             if (password != confirmPassword) {
                 passConMess = "Password doesn't match." + "<br>" + "<br>";
                 count++;
             }
                 
+            // Validate email
             if (!emailPattern.test(email)) {
                 emailMess = "Check the Email.";
                 count++;
             }
+            // Display appropriate message based on validation results
             if(count == 0) {
                 messageBox.textContent = "Sign up successful!";
             } else {
                 messageBox.innerHTML = userMess + passMess + passConMess + emailMess;
             }
     
+            // Display message box
             messageBoxContainer.style.display = "block";
         }
     
+        // Create message box container and style it
         const messageBoxDiv = document.createElement('div');
-    
         messageBoxDiv.id = 'messageBoxContainer';
         messageBoxDiv.className = 'messageBoxContainer';
-    
         messageBoxDiv.style.display = 'none';
     
+        // Create message text paragraph
         const messageTextParagraph = document.createElement('p');
         messageTextParagraph.id = 'message-text';
-    
         messageBoxDiv.appendChild(messageTextParagraph);
     
+        // Append message box container to the body
         document.body.appendChild(messageBoxDiv);
     
+        // Create and append styles for the message box
         const style = document.createElement('style');
-    
         style.textContent = 
         '.messageBoxContainer {' +
             'border: 2px solid;' +
@@ -122,10 +149,10 @@
             'padding: 10px;' +
             'margin: 20px;' +
         '}';
-    
         document.head.appendChild(style);
     </script>
 
+    <!-- Footer section -->
     <footer class="footer">
      <!-- Copyright notice goes here -->
          &copy; 2024 G&J Designs. Copyright Jolie Jony and Grazia Mena.
