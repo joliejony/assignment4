@@ -41,12 +41,94 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-                <button type="submit" class="signup-btn">Signup</button>
-            </form>
+                <button type="button" class="signup-btn" onclick="validate()">Sign Up</button>           
+             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 G&J Designs. Copyright Jolie Jony and Grazia Mena.</p>
-    </footer>
+
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value;
+            var usernamePattern = /^[a-zA-Z][a-zA-Z0-9-_]{2,19}$/;
+    
+            var password = document.getElementById("password").value;
+            var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s)(?=.*[!@#$%^&*()-_=+\[\]{}|;:'\",.<>?/`~]).{8,}$/;
+            var confirmPassword = document.getElementById("confirm-password").value;
+    
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+            var messageBoxContainer = document.getElementById("messageBoxContainer");
+            var messageBox = document.getElementById("message-text");
+    
+            messageBoxContainer.style.display = "none";
+            messageBox.textContent = "";
+    
+            var count = 0;
+            var userMess = "";
+            var passMess = "";
+            var passConMess = "";
+            var emailMess = "";
+    
+            if (!usernamePattern.test(username)) {
+                userMess = "Check the Username." + "<br>"+ "<br>";
+                count++;
+            }
+                
+            if (!passwordPattern.test(password)) {
+                passMess = "Invalid password." + "<br>"+ "<br>";
+                count++;
+            }
+                
+            if (password != confirmPassword) {
+                passConMess = "Password doesn't match." + "<br>" + "<br>";
+                count++;
+            }
+                
+            if (!emailPattern.test(email)) {
+                emailMess = "Check the Email.";
+                count++;
+            }
+            if(count == 0) {
+                messageBox.textContent = "Sign up successful!";
+            } else {
+                messageBox.innerHTML = userMess + passMess + passConMess + emailMess;
+            }
+    
+            messageBoxContainer.style.display = "block";
+        }
+    
+        const messageBoxDiv = document.createElement('div');
+    
+        messageBoxDiv.id = 'messageBoxContainer';
+        messageBoxDiv.className = 'messageBoxContainer';
+    
+        messageBoxDiv.style.display = 'none';
+    
+        const messageTextParagraph = document.createElement('p');
+        messageTextParagraph.id = 'message-text';
+    
+        messageBoxDiv.appendChild(messageTextParagraph);
+    
+        document.body.appendChild(messageBoxDiv);
+    
+        const style = document.createElement('style');
+    
+        style.textContent = 
+        '.messageBoxContainer {' +
+            'border: 2px solid;' +
+            'border-color: white;' +
+            'background-color: #f9f9f9;' +
+            'padding: 10px;' +
+            'margin: 20px;' +
+        '}';
+    
+        document.head.appendChild(style);
+    </script>
+
+    <footer class="footer">
+     <!-- Copyright notice goes here -->
+         &copy; 2024 G&J Designs. Copyright Jolie Jony and Grazia Mena.
+     </footer>
 </body>
 </html>
