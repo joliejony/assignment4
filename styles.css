@@ -491,7 +491,11 @@ input[type="email"]:focus {
     border: 2px solid #4CAF50; /* green */
 }
 
-
+.email-button{
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+}
 
 /* Signup Button */
 .signup-btn {
@@ -502,11 +506,12 @@ input[type="email"]:focus {
     margin: 10px;
     opacity: 0.5;
     cursor: pointer;
-   
+    
 }
+    
+
 
 .signup-btn:hover {
     background-color: #45A049; /* slightly darker green */
     opacity: 1.0;
 }
-  
